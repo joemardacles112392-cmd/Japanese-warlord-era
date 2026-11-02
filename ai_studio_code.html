@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sengoku Chronicles - Legendary Samurai Figures</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="kanji-mark">武士道</span>
+        <span class="logo-text">Sengoku Chronicles</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#eras">Historical Eras</a>
+        <a href="#samurai">Legendary Figures</a>
+        <a href="#bushido">Code of Bushido</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">Feudal Japan · Sengoku & Edo Eras</span>
+      <h1 class="hero-title">Legendary Samurai & Feudal Eras</h1>
+      <p class="hero-desc">
+        Tuklasin ang kasaysayan ng mga dakilang pinuno at mandirigma ng Japan noong Panahon ng Sengoku at Edo—mula kay Oda Nobunaga hanggang kay Miyamoto Musashi.
+      </p>
+      <div class="hero-buttons">
+        <a href="#samurai" class="btn btn-crimson">Kilalanin ang mga Samurai</a>
+        <a href="#bushido" class="btn btn-outline">Ang Kodigo ng Bushido</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ERAS TIMELINE -->
+  <section id="eras" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-kicker">Kasaysayan ng Japan</span>
+        <h2 class="section-title">Mga Mahahalagang Panahon (Eras)</h2>
+      </div>
+
+      <div class="eras-grid">
+        <div class="era-card">
+          <span class="era-years">1467 – 1568</span>
+          <h3 class="era-name">Sengoku Jidai (Warring States)</h3>
+          <p class="era-desc">
+            Panahon ng matinding digmaan sa pagitan ng mga daimyo para sa kapangyarihan at pagkakaisa ng bansang Hapon.
+          </p>
+        </div>
+
+        <div class="era-card active-card">
+          <span class="era-years">1568 – 1600</span>
+          <h3 class="era-name">Azuchi-Momoyama Period</h3>
+          <p class="era-desc">
+            Panahon ng muling pagkakabuklod ng bansa sa ilalim ng pamumuno nina Oda Nobunaga at Toyotomi Hideyoshi.
+          </p>
+        </div>
+
+        <div class="era-card">
+          <span class="era-years">1603 – 1867</span>
+          <h3 class="era-name">Edo Period (Tokugawa Era)</h3>
+          <p class="era-desc">
+            Higit 250 taon ng kapayapaan at pag-unlad ng kultura sa ilalim ng pamamahala ng Tokugawa Shogunate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAMURAI FIGURES SHOWCASE -->
+  <section id="samurai" class="section section-dark">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-kicker kicker-gold">Mga Dakilang Mandirigma</span>
+        <h2 class="section-title text-white">Legendary Samurai Figures</h2>
+        <p class="section-subtitle">
+          Piliin ang kategorya upang makita ang kanilang ambag sa kasaysayan ng Japan:
+        </p>
+      </div>
+
+      <!-- Filter Controls (JavaScript) -->
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">Lahat (All)</button>
+        <button class="filter-btn" data-filter="unifier">Great Unifiers</button>
+        <button class="filter-btn" data-filter="swordsman">Master Swordsmen</button>
+      </div>
+
+      <!-- Samurai Cards Grid -->
+      <div class="samurai-grid" id="samuraiContainer">
+        
+        <!-- 1: Oda Nobunaga -->
+        <div class="samurai-card" data-category="unifier">
+          <div class="card-kanji">信長</div>
+          <div class="card-body">
+            <span class="figure-role">The First Great Unifier</span>
+            <h3 class="figure-name">Oda Nobunaga</h3>
+            <span class="figure-dates">1534 – 1582 · Owari Province</span>
+            <p class="figure-bio">
+              Isang makapangyarihang daimyo na nagpasimula ng pagkakaisa ng Japan. Kilala sa kanyang makabagong taktika gamit ang firearms (tanegashima) at matapang na pamumuno.
+            </p>
+            <div class="quote-box">"Kung ang ibon ay ayaw kumanta, patayin ito."</div>
+          </div>
+        </div>
+
+        <!-- 2: Toyotomi Hideyoshi -->
+        <div class="samurai-card" data-category="unifier">
+          <div class="card-kanji">秀吉</div>
+          <div class="card-body">
+            <span class="figure-role">The Second Unifier</span>
+            <h3 class="figure-name">Toyotomi Hideyoshi</h3>
+            <span class="figure-dates">1537 – 1598 · Nagoya</span>
+            <p class="figure-bio">
+              Mula sa pagiging simpleng sundalo, umangat siya hanggang naging pinuno ng buong Japan. Ipinatupad niya ang "Sword Hunt" upang mapanatili ang kapayapaan sa bansa.
+            </p>
+            <div class="quote-box">"Kung ang ibon ay ayaw kumanta, pilitin itong kumanta."</div>
+          </div>
+        </div>
+
+        <!-- 3: Tokugawa Ieyasu -->
+        <div class="samurai-card" data-category="unifier">
+          <div class="card-kanji">家康</div>
+          <div class="card-body">
+            <span class="figure-role">Founder of the Edo Shogunate</span>
+            <h3 class="figure-name">Tokugawa Ieyasu</h3>
+            <span class="figure-dates">1543 – 1616 · Mikawa</span>
+            <p class="figure-bio">
+              Nagwagi sa makasaysayang Battle of Sekigahara (1600). Itinatag ang Tokugawa Shogunate na nagdala ng mahabang kapayapaan at disiplina sa Japan.
+            </p>
+            <div class="quote-box">"Kung ang ibon ay ayaw kumanta, maghintay hanggang sa ito ay kumanta."</div>
+          </div>
+        </div>
+
+        <!-- 4: Miyamoto Musashi -->
+        <div class="samurai-card" data-category="swordsman">
+          <div class="card-kanji">武蔵</div>
+          <div class="card-body">
+            <span class="figure-role">The Undefeated Kensei</span>
+            <h3 class="figure-name">Miyamoto Musashi</h3>
+            <span class="figure-dates">1584 – 1645 · Harima</span>
+            <p class="figure-bio">
+              Ang pinakatanyag na swordmaster sa kasaysayan ng mundo na may mahigit 60 duels nang hindi natalo kailanman. May-akda ng tanyag na pilosopiya: The Book of Five Rings.
+            </p>
+            <div class="quote-box">"Walang sinumang makakapigil sa taong may buong disiplina sa sarili."</div>
+          </div>
+        </div>
+
+        <!-- 5: Sanada Yukimura -->
+        <div class="samurai-card" data-category="swordsman">
+          <div class="card-kanji">幸村</div>
+          <div class="card-body">
+            <span class="figure-role">The Crimson Demon of War</span>
+            <h3 class="figure-name">Sanada Yukimura</h3>
+            <span class="figure-dates">1567 – 1615 · Shinano</span>
+            <p class="figure-bio">
+              Tinaguriang "Number One Warrior in Japan" dahil sa kanyang walang kapantay na katapangan sa pagtatanggol sa Osaka Castle laban sa hukbo ni Ieyasu.
+            </p>
+            <div class="quote-box">"Ang tunay na mandirigma ay hindi sumusuko anuman ang lakas ng kalaban."</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSHIDO SECTION & LIVE QUOTE GENERATOR -->
+  <section id="bushido" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-kicker">Ang Landas ng Mandirigma</span>
+        <h2 class="section-title">The 7 Virtues of Bushido</h2>
+      </div>
+
+      <div class="virtues-grid">
+        <div class="virtue-item"><strong>義 (Gi)</strong><span>Integridad</span></div>
+        <div class="virtue-item"><strong>勇 (Yū)</strong><span>Katapangan</span></div>
+        <div class="virtue-item"><strong>仁 (Jin)</strong><span>Habag</span></div>
+        <div class="virtue-item"><strong>礼 (Rei)</strong><span>Paggalang</span></div>
+        <div class="virtue-item"><strong>誠 (Makoto)</strong><span>Katapatan</span></div>
+        <div class="virtue-item"><strong>名誉 (Meiyo)</strong><span>Karangalan</span></div>
+        <div class="virtue-item"><strong>忠義 (Chūgi)</strong><span>Loyalty</span></div>
+      </div>
+
+      <div class="quote-generator-card">
+        <h3>Pagninilay ng Samurai (Daily Bushido Wisdom)</h3>
+        <p id="quoteDisplay" class="active-quote">
+          "Master the sword by mastering your mind first." — Miyamoto Musashi
+        </p>
+        <button id="nextQuoteBtn" class="btn btn-crimson">Kumuha ng Bagong Kasabihan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Sengoku Chronicles · GitHub Portfolio Project</p>
+      <a href="#eras" class="back-top">Bumalik sa Taas ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
